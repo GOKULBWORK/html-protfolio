@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      background: #000;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      flex: 1;
+      min-width: 200px;
+      margin: 10px;
+      padding: 20px;
+      background-color: #f23;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+  <title>Responsive Design Example</title>
+</head>
+<body>
+  <div class="container">
+    <div class="box"><a href="https://chatgpt.com/c/5c675fa8-8f02-490f-8f3a-36043b3b106d">chat gpt</a></div>
+    <div class="box">Boxs2</div>
+    <div class="box">Box 3</div>
+  </div>
+</body>
+</html>
